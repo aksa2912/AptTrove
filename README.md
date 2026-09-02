@@ -120,88 +120,34 @@ The components are designed around this future flow:
 The codebase is highly componentized. Pages compose reusable components rather than having massive single files.
 
 ```text
-/app
-  /components
-    /layout
-      navbar.tsx
-      footer.tsx
-      sidebar.tsx
-      mobile-nav.tsx
-      theme-provider.tsx (Handles Light/Dark switching)
-      
-    /landing
-      hero-section.tsx
-      feature-section.tsx
-      how-it-works-section.tsx
-      location-section.tsx
-      team-builder-preview.tsx
-      skillswap-preview.tsx
-      trust-section.tsx
-      final-cta-section.tsx
-      
-    /skillswap
-      skillswap-header.tsx
-      skill-profile-panel.tsx
-      skill-match-card.tsx
-      match-score.tsx
-      match-reason.tsx
-      availability-badge.tsx
-      distance-badge.tsx
-      skillswap-filters.tsx
-      
-    /team-builder
-      team-builder-header.tsx
-      project-form.tsx
-      required-skills.tsx
-      team-size-selector.tsx
-      location-selector.tsx
-      radius-selector.tsx
-      availability-selector.tsx
-      ai-assistant-panel.tsx
-      team-recommendation.tsx
-      team-member-card.tsx
-      team-seat-card.tsx
-      team-balance.tsx
-      
-    /discover
-      discover-search.tsx
-      discover-filters.tsx
-      discover-results.tsx
-      project-card.tsx
-      student-card.tsx
-      
-    /connections
-      connection-card.tsx
-      connection-request.tsx
-      contact-reveal.tsx
-      
-    /profile
-      profile-header.tsx
-      skill-section.tsx
-      availability-section.tsx
-      project-section.tsx
-      profile-stats.tsx
-      
-    /notifications
-      notification-panel.tsx
-      notification-item.tsx
-      
-    /ui
-      button.tsx
-      card.tsx
-      input.tsx
-      dialog.tsx
-      skeleton.tsx
-      empty-state.tsx
-
-  /types
-    index.ts (Contains centralized interfaces like StudentProfile, SkillSwapMatch, TeamProject, AIMessage, etc.)
-    
-  /constants
-    skills.ts (Skill categories)
-    radius.ts (10, 20, 30, 40, 50km options)
-    availability.ts (Days of week, time slots)
-    
-  /hooks
-    useTheme.ts
-    useGeolocation.ts (Browser location permission flow)
+apttrove-frontend
+├── app
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components
+│   ├── connections
+│   ├── discover
+│   ├── landing
+│   ├── layout
+│   ├── notifications
+│   ├── profile
+│   ├── shared
+│   ├── skillswap
+│   └── team-builder
+├── lib
+├── providers
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── node_modules
+├── .gitignore
+├── AGENTS.md
+├── CLAUDE.md
+├── eslint.config.mjs
+├── next-env.d.ts
+└── package.json
