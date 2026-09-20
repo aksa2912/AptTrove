@@ -34,7 +34,7 @@ export function HeroSection() {
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[rgb(15_12_30)] dark:text-white leading-[1.1]">
               What if the{" "}
-              <span className="text-[#3788FE] underline decoration-[#BEB3FF]/40 decoration-wavy underline-offset-8">
+              <span className="text-[#3788FE]  underline-offset-8">
                 right connection
               </span>{" "}
               could find you?
